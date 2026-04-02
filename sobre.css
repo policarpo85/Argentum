@@ -1,0 +1,139 @@
+/* =========================================
+   Estrutura Principal e Alinhamentos
+   ========================================= */
+
+.secao-sobre {
+  padding-top: 7rem;    /* Espaço interno no topo */
+  padding-bottom: 6rem; /* Espaço interno na base */
+}
+
+.container-sobre {
+  max-width: 100%;
+  margin-left: auto;   /* Centraliza o container */
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* =========================================
+   Cabeçalho (Textos Superiores)
+   ========================================= */
+
+.cabecalho-sobre {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.subtitulo-sobre {
+  color: var(--primary, #d4af37); /* Cor principal (Ex: Dourado) */
+  letter-spacing: 0.3em;          /* Espaçamento largo entre letras */
+  text-transform: uppercase;      /* Tudo em letras MAIÚSCULAS */
+  font-size: 0.875rem;            /* Texto pequeno */
+  margin-bottom: 0.75rem;
+  font-family: var(--font-body, sans-serif);
+}
+
+.titulo-sobre {
+  font-size: 2.25rem; /* Tamanho do texto para celular */
+  font-family: var(--font-display, serif);
+}
+
+/* =========================================
+   Grade Principal (Imagem + Textos)
+   ========================================= */
+
+.conteudo-sobre {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 coluna no celular */
+  gap: 4rem;                  /* Espaço entre imagem e texto */
+  align-items: center;        /* Alinha os itens no centro verticalmente */
+  max-width: 72rem;           /* Largura máxima elegante */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========================================
+   Imagem
+   ========================================= */
+
+.container-imagem {
+  overflow: hidden;
+  border-radius: 0.5rem; /* Bordas levemente arredondadas */
+}
+
+.imagem-sobre {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer */
+}
+
+/* =========================================
+   Textos e Parágrafos
+   ========================================= */
+
+.textos-sobre {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Espaço entre os títulos e parágrafos */
+}
+
+.titulo-secundario {
+  font-size: 1.875rem;
+  font-family: var(--font-display, serif);
+  /* Se você usava um gradiente dourado, aqui está o CSS para isso: */
+  background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.paragrafo-sobre {
+  color: #6b7280; /* Cor suave para leitura (cinza) */
+  font-size: 1.25rem;
+  line-height: 1.625; /* Espaçamento entre as linhas (respiro) */
+  font-family: var(--font-body, sans-serif);
+}
+
+/* =========================================
+   Estatísticas (Números no final)
+   ========================================= */
+
+.estatisticas-grade {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+  gap: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.item-estatistica {
+  text-align: center;
+}
+
+.valor-estatistica {
+  font-size: 1.875rem;
+  color: var(--primary, #d4af37);
+  font-family: var(--font-display, serif);
+}
+
+.rotulo-estatistica {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  font-family: var(--font-body, sans-serif);
+}
+
+/* =========================================
+   Design Responsivo (Telas Maiores)
+   ========================================= */
+
+/* Quando a tela for do tamanho de um tablet/computador (min-width: 768px ou 1024px) */
+@media (min-width: 768px) {
+  .titulo-sobre {
+    font-size: 3rem; /* Título fica maior no computador */
+  }
+}
+
+@media (min-width: 1024px) {
+  .conteudo-sobre {
+    grid-template-columns: repeat(2, 1fr); /* Divide em 2 colunas: Imagem de um lado, Texto do outro */
+  }
+}
