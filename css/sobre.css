@@ -1,13 +1,191 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ESTRUTURA GLOBAL */
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
 body {
-  background-color: #f0f8ff;
-  font-family: Arial;
+  display: flex;
+  flex-direction: column;
+  background: #f5f5f5;
 }
-nav {
-  background-color: #333;
-  padding: 10px;
+
+/* ================= HEADER PADRÃO ================= */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: black;
 }
+
+.logo {
+  width: 120px;
+}
+
 nav a {
   color: white;
-  margin-right: 15px;
+  margin-left: 20px;
   text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #d4af37;
+}
+
+/* ================= MAIN ================= */
+
+main {
+  flex: 1;
+}
+
+/* =========================================
+   SEÇÃO SOBRE
+   ========================================= */
+
+.secao-sobre {
+  padding-top: 7rem;
+  padding-bottom: 6rem;
+}
+
+.container-sobre {
+  max-width: 100%;
+  margin: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* =========================================
+   CABEÇALHO
+   ========================================= */
+
+.cabecalho-sobre {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.subtitulo-sobre {
+  color: #d4af37;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+}
+
+.titulo-sobre {
+  font-size: 2.25rem;
+}
+
+/* =========================================
+   CONTEÚDO GRID
+   ========================================= */
+
+.conteudo-sobre {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  align-items: center;
+  max-width: 72rem;
+  margin: auto;
+}
+
+/* =========================================
+   IMAGEM
+   ========================================= */
+
+.container-imagem {
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.imagem-sobre {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* =========================================
+   TEXTOS
+   ========================================= */
+
+.textos-sobre {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.titulo-secundario {
+  font-size: 1.875rem;
+
+  /* EFEITO DOURADO CORRIGIDO */
+  background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7);
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.paragrafo-sobre {
+  color: #6b7280;
+  font-size: 1.25rem;
+  line-height: 1.625;
+}
+
+/* =========================================
+   ESTATÍSTICAS
+   ========================================= */
+
+.estatisticas-grade {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.item-estatistica {
+  text-align: center;
+}
+
+.valor-estatistica {
+  font-size: 1.875rem;
+  color: #d4af37;
+}
+
+.rotulo-estatistica {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* ================= FOOTER PADRÃO ================= */
+
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* =========================================
+   RESPONSIVO (DESKTOP)
+   ========================================= */
+
+@media (min-width: 768px) {
+  .conteudo-sobre {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .titulo-sobre {
+    font-size: 3rem;
+  }
 }

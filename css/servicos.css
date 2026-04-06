@@ -11,3 +11,121 @@ nav a {
   margin-right: 15px;
   text-decoration: none;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* FAZ O FOOTER FICAR NO FINAL */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: black;
+}
+
+.logo {
+    width: 120px;
+}
+
+nav {
+    background: transparent;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+/* TÍTULO */
+.titulo {
+    text-align: center;
+    padding: 40px;
+    background: #f5f5f5;
+}
+
+.titulo h1 {
+    font-size: 2.5rem;
+}
+
+.titulo p {
+    color: #555;
+    margin-top: 10px;
+}
+
+/* SERVIÇOS */
+.servicos {
+    padding: 50px;
+    flex: 1;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+/* DETALHE DOURADO */
+.card::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: gold;
+    margin: 0 auto 10px;
+}
+
+/* FOOTER CORRIGIDO */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
