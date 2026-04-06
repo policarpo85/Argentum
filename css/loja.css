@@ -16,7 +16,7 @@ header {
 
 .header-cabecalho {
     display: grid;
-    grid-template-columns: 1.2fr auto 1fr;
+    grid-template-columns: 1.1fr auto 1fr;
     align-items: center;
     position: fixed;
     top: 0;
@@ -74,6 +74,32 @@ body {
     padding-top: 130px;
 }
 
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body h1, body h4 {
+    display: flex;
+    font-family: 'Playfair Display', serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body h4 {
+    letter-spacing: .3em;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    color: #b8a070;
+}
+
+body h1 {
+    margin-bottom: 10px;
+    color: #e4e6ea;
+    font-size: 3rem;
+    line-height: 1;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -91,6 +117,7 @@ body {
 .produto {
     background: #161b22;
     padding: 15px;
+    gap: 12px;
     width: 250px;
     border-radius: 8px;
     display: flex;
@@ -109,6 +136,21 @@ body {
 
 .produto:hover img {
     transform: scale(1.05);
+}
+
+.comprar {
+    background-color: #b8a070;
+    color: #0f1318;
+    border: none;
+    padding: 7px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}   
+
+.comprar:hover {
+    background-color: #d4b36e;
 }
 
 .footer {
