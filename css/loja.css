@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-padding-top: 130px;
+}
+
 header {
     background-color: #0f1318;
     color: #fff;
@@ -12,7 +16,7 @@ header {
 
 .header-cabecalho {
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: 1.2fr auto 1fr;
     align-items: center;
     position: fixed;
     top: 0;
@@ -66,14 +70,109 @@ nav ul li a:hover {
 body {
     font-family: 'Cormorant Garamond', serif;
     background-color: #0f1318;
-    color: #333;
-}
-
-body::-webkit-scrollbar {
-    display: none;
+    color: #fff;
+    padding-top: 130px;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.produto {
+    background: #161b22;
+    padding: 15px;
+    width: 250px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.produto img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    transition: transform 0.5s ease;
+}
+
+.produto:hover img {
+    transform: scale(1.05);
+}
+
+.footer {
+    background-color: #0f1318;
+    color: #b0b4bc;
+    padding: 40px 20px;
+    margin-top: 40px;
+    width: 70%;
+}
+
+.footer {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    color: #b0b4bc;
+    font-size: 18px;
+}
+
+.contatos, .navegacao, .footer-titulo {
+    margin-top: 20px;
+    color: #b0b4bc;
+    font-size: 18px;
+}
+
+.contatos p, .navegacao a {
+    margin-bottom: 10px;
+}
+
+.contatos p i {
+    margin-right: 8px;
+    color: #b8a070;
+
+}
+
+.contatos h1, .navegacao h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: #b8a070;
+}
+
+.footer-loja {
+    display: flex;
+    background-color: #0f1318;
+    color: #b0b4bc;
+    padding: 40px 20px;
+    margin-top: 40px;
+    gap: 300px;
+}
+
+.footer-loja img {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.navegacao a {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    color: #b0b4bc;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.navegacao a:hover {
+    color: #b8a070;
 }
