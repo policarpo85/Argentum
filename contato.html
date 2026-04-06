@@ -8,15 +8,54 @@
 <body>
 
   <nav>
-      <a href="index.html">Home</a>
+      <a href="index.html" class="logo-argentum"><img src="assents/logo-argentum (1).png" alt="logo Argentum"></a>
       <a href="servicos.html">Serviços</a>
       <a href="loja.html">Loja</a>
       <a href="sobre.html">Sobre</a>
       <a href="contato.html">Contato</a>
   </nav>
 
-  <h1>Contato</h1>
-  <p>Entre em contato conosco através desta página.</p>
+  <main class="contact-container">
+        <section class="contact-info">
+            <h1>Entre em Contato</h1>
+            <p>Tem alguma dúvida ou deseja uma peça personalizada?<br>Ficaremos felizes em ajudar.</p>
+            
+            <div class="info-items">
+                <div class="info-item">
+                    <div class="icon-box">📧</div>
+                    <span>contato@lumieresilver.com</span>
+                </div>
+                <div class="info-item">
+                    <div class="icon-box">📞</div>
+                    <span>(11) 99999-0000</span>
+                </div>
+                <div class="info-item">
+                    <div class="icon-box">📍</div>
+                    <span>São Paulo, SP - Brasil</span>
+                </div>
+            </div>
+        </section>
 
+        <section class="contact-form-container">
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="nome">NOME</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">MENSAGEM</label>
+                    <textarea id="mensagem" name="mensagem" rows="6"></textarea>
+                </div>
+
+                <button type="submit" class="btn-send">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
