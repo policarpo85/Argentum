@@ -1,69 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Loja - Argentum</title>
-  <link rel="stylesheet" href="css/loja.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/loja.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>Argentum | A sua loja de jóias!</title>
 </head>
 <body>
-
-<header class="header">
-    <img src="assents/logo-argentum.png" class="logo">
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="servicos.html">Serviços</a>
-        <a href="loja.html">Loja</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="contato.html">Contato</a>
-    </nav>
-</header>
-
-<section class="titulo">
-    <h1>Nossa Coleção</h1>
-    <p>Escolha sua joia ideal</p>
-</section>
-
-<section class="produtos">
-
-    <div class="grid">
-
-        <div class="card">
-            <img src="assents/product-ring.jpg">
-            <h3>Anel de Ouro</h3>
-            <p>R$ 899,90</p>
-            <button>Comprar</button>
+    <header>
+        <div class="header-cabecalho">
+            <img src="./img/logo-argentum.png" alt="Logo da Argentum" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="loja.html">Loja</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="carrinho"><i class="fas fa-shopping-cart"></i></a>
         </div>
-
-        <div class="card">
-            <img src="assents/product-necklace.jpg">
-            <h3>Colar Premium</h3>
-            <p>R$ 1.299,90</p>
-            <button>Comprar</button>
+    </header>
+    <div class="container">
+        <h4>COLEÇÃO COMPLETA</h4>
+        <h1>Nossa Loja</h1>
+        <div class="produtos">
+            <div class="produto">
+                <img src="./img/colar.png" alt="Colar">
+                <h2>Colar Gota Royale</h2>
+                <p>Colar em prata 925 com pingente gota de topázio azul e acabamento premium.</p>
+                <span class="preco">R$ 99,99</span>
+                <button class="comprar">Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="./img/brinco.png" alt="Brinco">
+                <h2>Brinco Cascade</h2>
+                <p>Brincos pendentes em prata 925 com cristais lapidados à mão.</p>
+                <span class="preco">R$ 149,99</span>
+                <button class="comprar">Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="./img/anel.png" alt="Anel">
+                <h2>Anel Infinito</h2>
+                <p>Anel delicado em prata 925 com símbolo do infinito cravejado.</p>
+                <span class="preco">R$ 199,99</span>
+                <button class="comprar">Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="./img/pulseira.png" alt="Pulseira">
+                <h2>Pulseira Riviera</h2>
+                <p>Pulseira riviera em prata 925 com zircônias em toda extensão.</p>
+                <span class="preco">R$ 129,99</span>
+                <button class="comprar">Comprar</button>
+            </div>
         </div>
-
-        <div class="card">
-            <img src="assents/product-earrings.jpg">
-            <h3>Brinco Luxo</h3>
-            <p>R$ 499,90</p>
-            <button>Comprar</button>
-        </div>
-
-        <div class="card">
-            <img src="assents/product-bracelet.jpg">
-            <h3>Pulseira Elegance</h3>
-            <p>R$ 699,90</p>
-            <button>Comprar</button>
-        </div>
-
     </div>
+    <footer>
+        <div class="footer-loja">
+            <div class="footer-titulo">
+                <img src="./img/logo-argentum.png" alt="Logo da Argentum" class="logo-footer">
+                <p>Joias em prata 925 feitas com amor e dedicação artesanal.</p>
+            </div>
 
-</section>
+            <div class="navegacao">
+                <h1>Navegação</h1>
+                <a href="index.html">Home</a>
+                <a href="loja.html">Loja</a>
+                <a href="contato.html">Contato</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="servicos.html">Serviços</a>
+            </div>
 
-<footer>
-    <p>© 2026 Argentum Joias</p>
-</footer>
-
+            <div class="contatos">
+                <h1>Contatos</h1>
+                <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+                <p><i class="fas fa-envelope"></i> contato@argentum.com</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy; 2026 Argentum. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
