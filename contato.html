@@ -4,19 +4,61 @@
   <meta charset="UTF-8">
   <title>Contato</title>
   <link rel="stylesheet" href="css/contato.css">
+  
 </head>
 <body>
 
-  <nav>
-      <a href="index.html">Home</a>
-      <a href="servicos.html">Serviços</a>
-      <a href="loja.html">Loja</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="contato.html">Contato</a>
-  </nav>
+  <!-- HEADER PADRÃO -->
+  <header class="header">
+    <img src="assents/logo-argentum.png" class="logo">
 
-  <h1>Contato</h1>
-  <p>Entre em contato conosco através desta página.</p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="loja.html">Loja</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+</header>
+
+  <main>
+    <section class="secao-contato">
+      <div class="container-contato">
+
+        <div class="cabecalho-contato">
+          <p class="subtitulo-contato">FALE CONOSCO</p>
+          <h1 class="titulo-contato">Entre em Contato</h1>
+        </div>
+
+        <div class="conteudo-contato">
+
+          <!-- FORMULÁRIO -->
+          <form class="formulario-contato">
+            <input type="text" placeholder="Seu nome" required>
+            <input type="email" placeholder="Seu email" required>
+            <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar Mensagem</button>
+          </form>
+
+          <!-- INFORMAÇÕES -->
+          <div class="info-contato">
+            <h2>Informações</h2>
+            <p>Email: contato@empresa.com</p>
+            <p>Telefone: (85) 99999-9999</p>
+            <p>Endereço: Fortaleza - CE</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER PADRÃO -->
+  <footer>
+    <p>© 2026 - Sua Empresa. Todos os direitos reservados.</p>
+  </footer>
 
 </body>
 </html>
