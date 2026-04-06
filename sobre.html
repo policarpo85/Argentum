@@ -2,52 +2,61 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sobre</title>
   <link rel="stylesheet" href="css/sobre.css">
- 
+  <link rel="stylesheet" href="css/loja.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- HEADER PADRÃO -->
-<header class="header">
-    <img src="assents/logo-argentum.png" class="logo">
+    <header>
+        <div class="header-cabecalho">
+            <img src="./img/logo-argentum.png" alt="Logo da Argentum" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="loja.html">Loja</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="carrinho"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="servicos.html">Serviços</a>
-        <a href="loja.html">Loja</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="contato.html">Contato</a>
-    </nav>
-</header>
 <main>
     <section class="secao-sobre">
         <div class="container-sobre">
-            
+
             <header class="cabecalho-sobre">
                 <p class="subtitulo-sobre">Nossa História</p>
                 <h1 class="titulo-sobre">Sobre Nós</h1>
             </header>
 
             <div class="conteudo-sobre">
-                
+
                 <div class="container-imagem">
                     <img src="assents/about-craftsman.jpg" alt="Artesão criando joias de prata" class="imagem-sobre">
                 </div>
 
                 <div class="textos-sobre">
                     <h2 class="titulo-secundario">Tradição & Modernidade</h2>
-                    
+
                     <p class="paragrafo-sobre">
                         Fundada em 2025, a Argentum nasceu da paixão por transformar prata 925 em obras de arte vestíveis e com significado único. Cada peça é cuidadosamente projetada por artesãos experientes.
                     </p>
-                    
+
                     <p class="paragrafo-sobre">
                         Nosso compromisso é oferecer joias de alta qualidade que combinam design contemporâneo com técnicas artesanais tradicionais.
                     </p>
-                    
+
                     <div class="estatisticas-grade">
-                        
+
                         <div class="item-estatistica">
                             <p class="valor-estatistica">500+</p>
                             <p class="rotulo-estatistica">Peças Criadas</p>
@@ -64,16 +73,38 @@
                         </div>
 
                     </div>
-                </div> 
-            </div> 
+                </div>
+            </div>
         </div>
     </section>
 </main>
 
-<!-- FOOTER PADRÃO -->
-<footer>
-    <p>© 2026 Argentum Joias</p>
-</footer>
+    <footer>
+        <div class="footer-loja">
+            <div class="footer-titulo">
+                <img src="./img/logo-argentum.png" alt="Logo da Argentum" class="logo-footer">
+                <p>Joias em prata 925 feitas com amor e dedicação artesanal.</p>
+            </div>
+
+            <div class="navegacao">
+                <h1>Navegação</h1>
+                <a href="index.html">Home</a>
+                <a href="loja.html">Loja</a>
+                <a href="contato.html">Contato</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="servicos.html">Serviços</a>
+            </div>
+
+            <div class="contatos">
+                <h1>Contatos</h1>
+                <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+                <p><i class="fas fa-envelope"></i> contato@argentum.com</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy; 2026 Argentum. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
