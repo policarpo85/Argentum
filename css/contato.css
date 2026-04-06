@@ -157,3 +157,19 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+.botão-wpp {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+}
+
+.botão-wpp img {
+  width: 75px;
+  height: auto;
+}
+ 
+.botão-wpp img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
