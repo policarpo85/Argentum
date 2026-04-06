@@ -11,9 +11,13 @@ header {
 }
 
 .header-cabecalho {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    justify-content: space-between;
+}
+
+nav {
+    justify-self: center;
 }
 
 nav ul {
@@ -29,6 +33,18 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    font-size: 23px;
+    font-family: 'Playfair Display', serif;
+}
+
+.carrinho {
+    justify-self: end;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .logo {
